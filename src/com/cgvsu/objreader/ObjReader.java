@@ -124,11 +124,8 @@ public class ObjReader {
 
 		for (String s : wordsInLineWithoutToken) {
 			parseFaceWord(s, onePolygonVertexIndices, onePolygonTextureVertexIndices, onePolygonNormalIndices, lineInd);
-			//
-			//System.out.println();
 		}
 
-		//System.out.println(onePolygonVertexIndices.size() + "  " + onePolygonTextureVertexIndices.size() + "  " + onePolygonNormalIndices.size() + "пере");
 		//предотвращение f 1//3 1/2/3 1 1/2
 		checkCorrectFaceFormat(onePolygonVertexIndices, onePolygonTextureVertexIndices, onePolygonNormalIndices, lineInd);
 
